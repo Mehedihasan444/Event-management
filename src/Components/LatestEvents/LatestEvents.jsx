@@ -51,7 +51,7 @@ const LatestEvents = () => {
         </div>
       </div>
       <div className="">
-      <Swiper
+      {/* <Swiper
         slidesPerView={3}
         spaceBetween={30}
         freeMode={true}
@@ -70,7 +70,7 @@ const LatestEvents = () => {
         <SwiperSlide>Slide 7</SwiperSlide>
         <SwiperSlide>Slide 8</SwiperSlide>
         <SwiperSlide>Slide 9</SwiperSlide>
-      </Swiper>
+      </Swiper> */}
 
    
       </div>
