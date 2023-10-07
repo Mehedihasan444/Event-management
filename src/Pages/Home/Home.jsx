@@ -2,7 +2,7 @@ import Banner from "../../Components/Banner/Banner";
 import Features from "../../Components/Features/Features";
 import LatestEvents from "../../Components/LatestEvents/LatestEvents";
 import Services from "../../Components/Services/Services";
-import UnforgattableTimes from "../../Components/UnforgattableTimes/UnforgattableTimes";
+import UnforgettableTimes from "../../Components/UnforgettableTimes/UnforgettableTimes";
 
 
 const Home = () => {
@@ -11,7 +11,7 @@ const Home = () => {
             <Banner></Banner>
             <LatestEvents></LatestEvents>
             <Features></Features>
-            <UnforgattableTimes></UnforgattableTimes>
+            <UnforgettableTimes></UnforgettableTimes>
             <Services></Services>
         </div>
     );

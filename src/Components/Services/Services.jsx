@@ -1,162 +1,72 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
+
 import {
   Card,
   CardHeader,
   CardBody,
+  CardFooter,
   Typography,
+  Button,
 
 } from "@material-tailwind/react";
+import { Link } from "react-router-dom";
+
 const Services = () => {
+const [images,setImages]=useState([])
+
+  useEffect(()=>{
+    fetch('/Services.json')
+    .then(res=>res.json())
+    .then(data=>setImages(data))
+  },[])
+
+  // console.log(images)
   return (
-    <div className="text-center mt-10 ">
+   <div className="">
+     <div className="text-center mt-10 max-w-7xl mx-auto">
       <p className="">OUR SERVICES</p>
       <h1 className="text-4xl">
         Harmoni <span className="font-bold "> Expertises</span>
       </h1>
-      <div className="mt-8 grid grid-cols-4 gap-5">
-      <Card
-        shadow={false}
-        className="relative grid h-[30rem] w-full max-w-[28rem] items-end justify-center overflow-hidden text-center"
-      >
-        <CardHeader
-          floated={false}
-          shadow={false}
-          color="transparent"
-          className="absolute inset-0 m-0 h-full w-full rounded-none bg-[url('https://images.unsplash.com/photo-1552960562-daf630e9278b?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80')] bg-cover bg-center"
-        >
-          <div className="to-bg-black-10 absolute inset-0 h-full w-full bg-gradient-to-t from-black/80 via-black/50" />
+      <div className="mt-8 grid grid-cols-3 gap-5">
+    
+    {
+      images.map(image=><>
+       <Card className="w-full max-w-[26rem] ">
+        <CardHeader floated={false} color="blue-gray">
+          <img
+            src={image.image}
+            alt=""
+          />
+          <div className="to-bg-black-10 absolute inset-0 h-full w-full bg-gradient-to-tr from-transparent via-transparent to-black/60 " />
         </CardHeader>
-        <CardBody className="relative py-14 px-6 md:px-12">
-          <Typography
-            variant="h3"
-            color="black"
-            className="mb-6 font-bold leading-[1.5] bg-white p-5 rounded-md"
-          >
-            Concert <span className="block text-gray-400 text-base">Staring from $1000-$2000</span>
+        <CardBody>
+          <div className="mb-3 flex items-center justify-between">
+            <Typography variant="h5" color="blue-gray" className="font-medium text-4xl ">
+            {image.category}
+            </Typography>
+       
+          </div>
+          <Typography color="gray" className="text-justify">
+          {image.description}
           </Typography>
+       <div className="text-gray-400 mt-5 text-lg text-left"><span className="text-black">Starting from : </span>{image.price}</div>
         </CardBody>
-        
+        <CardFooter className="pt-3">
+          <Link to={`/ServiceDetails/${image.id}`}>
+          <Button  className="text-white py-3 bg-black w-full border ">
+            See Details
+          </Button></Link>
+        </CardFooter>
       </Card>
-      <Card
-        shadow={false}
-        className="relative grid h-[30rem] w-full max-w-[28rem] items-end justify-center overflow-hidden text-center"
-      >
-        <CardHeader
-          floated={false}
-          shadow={false}
-          color="transparent"
-          className="absolute inset-0 m-0 h-full w-full rounded-none bg-[url('https://images.unsplash.com/photo-1552960562-daf630e9278b?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80')] bg-cover bg-center"
-        >
-          <div className="to-bg-black-10 absolute inset-0 h-full w-full bg-gradient-to-t from-black/80 via-black/50" />
-        </CardHeader>
-        <CardBody className="relative py-14 px-6 md:px-12">
-          <Typography
-            variant="h3"
-            color="black"
-            className="mb-6 font-bold leading-[1.5] bg-white p-5 rounded-md"
-          >
-            Concert <span className="block text-gray-400 text-base">Staring from $1000-$2000</span>
-          </Typography>
-        </CardBody>
-        
-      </Card>
-      <Card
-        shadow={false}
-        className="relative grid h-[30rem] w-full max-w-[28rem] items-end justify-center overflow-hidden text-center"
-      >
-        <CardHeader
-          floated={false}
-          shadow={false}
-          color="transparent"
-          className="absolute inset-0 m-0 h-full w-full rounded-none bg-[url('https://images.unsplash.com/photo-1552960562-daf630e9278b?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80')] bg-cover bg-center"
-        >
-          <div className="to-bg-black-10 absolute inset-0 h-full w-full bg-gradient-to-t from-black/80 via-black/50" />
-        </CardHeader>
-        <CardBody className="relative py-14 px-6 md:px-12">
-          <Typography
-            variant="h3"
-            color="black"
-            className="mb-6 font-bold leading-[1.5] bg-white p-5 rounded-md"
-          >
-            Concert <span className="block text-gray-400 text-base">Staring from $1000-$2000</span>
-          </Typography>
-        </CardBody>
-        
-      </Card>
-      <Card
-        shadow={false}
-        className="relative grid h-[30rem] w-full max-w-[28rem] items-end justify-center overflow-hidden text-center"
-      >
-        <CardHeader
-          floated={false}
-          shadow={false}
-          color="transparent"
-          className="absolute inset-0 m-0 h-full w-full rounded-none bg-[url('https://images.unsplash.com/photo-1552960562-daf630e9278b?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80')] bg-cover bg-center"
-        >
-          <div className="to-bg-black-10 absolute inset-0 h-full w-full bg-gradient-to-t from-black/80 via-black/50" />
-        </CardHeader>
-        <CardBody className="relative py-14 px-6 md:px-12">
-          <Typography
-            variant="h3"
-            color="black"
-            className="mb-6 font-bold leading-[1.5] bg-white p-5 rounded-md"
-          >
-            Concert <span className="block text-gray-400 text-base">Staring from $1000-$2000</span>
-          </Typography>
-        </CardBody>
-        
-      </Card>
-      <Card
-        shadow={false}
-        className="relative grid h-[30rem] w-full max-w-[28rem] items-end justify-center overflow-hidden text-center"
-      >
-        <CardHeader
-          floated={false}
-          shadow={false}
-          color="transparent"
-          className="absolute inset-0 m-0 h-full w-full rounded-none bg-[url('https://images.unsplash.com/photo-1552960562-daf630e9278b?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80')] bg-cover bg-center"
-        >
-          <div className="to-bg-black-10 absolute inset-0 h-full w-full bg-gradient-to-t from-black/80 via-black/50" />
-        </CardHeader>
-        <CardBody className="relative py-14 px-6 md:px-12">
-          <Typography
-            variant="h3"
-            color="black"
-            className="mb-6 font-bold leading-[1.5] bg-white p-5 rounded-md"
-          >
-            Concert <span className="block text-gray-400 text-base">Staring from $1000-$2000</span>
-          </Typography>
-        </CardBody>
-        
-      </Card>
-      <Card
-        shadow={false}
-        className="relative grid h-[30rem] w-full max-w-[28rem] items-end justify-center overflow-hidden text-center"
-      >
-        <CardHeader
-          floated={false}
-          shadow={false}
-          color="transparent"
-          className="absolute inset-0 m-0 h-full w-full rounded-none bg-[url('https://images.unsplash.com/photo-1552960562-daf630e9278b?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80')] bg-cover bg-center"
-        >
-          <div className="to-bg-black-10 absolute inset-0 h-full w-full bg-gradient-to-t from-black/80 via-black/50" />
-        </CardHeader>
-        <CardBody className="relative py-14 px-6 md:px-12">
-          <Typography
-            variant="h3"
-            color="black"
-            className="mb-6 font-bold leading-[1.5] bg-white p-5 rounded-md"
-          >
-            Concert <span className="block text-gray-400 text-base">Staring from $1000-$2000</span>
-          </Typography>
-        </CardBody>
-        
-      </Card>
+      </>
+        )
+    }
 
-      
       </div>
     
     </div>
+   </div>
   );
 };
 

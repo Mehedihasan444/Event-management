@@ -1,4 +1,4 @@
-const UnforgattableTimes = () => {
+const UnforgettableTimes = () => {
   return (
     <div className="text-center mt-10 ">
       <p className="">HARMONI GALLERY</p>
@@ -59,4 +59,4 @@ const UnforgattableTimes = () => {
   );
 };
 
-export default UnforgattableTimes;
+export default UnforgettableTimes;

@@ -6,7 +6,7 @@ import { BsConeStriped } from "react-icons/bs";
 const Features = () => {
   return (
     <div className="bg-[#f7f7f7] p-10 h-screen flex items-center">
-      <div className="flex gap-16">
+      <div className="flex gap-16 mx-auto max-w-7xl">
         <div className="w-[40%] space-y-5">
           <p className="">WE ARE HARMONIC</p>
           <h1 className="text-4xl">

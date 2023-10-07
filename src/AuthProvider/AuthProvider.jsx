@@ -12,7 +12,7 @@ export const AuthContext = createContext(null);
 // eslint-disable-next-line react/prop-types
 const AuthProvider = ({ children }) => {
   const [user, setUser] = useState(null);
-
+  const [images,setImages]=useState([])
   const createUser = (email, password) => {
     return createUserWithEmailAndPassword(auth, email, password);
   };
@@ -26,18 +26,26 @@ const AuthProvider = ({ children }) => {
   };
 
   useEffect(() => {
+    fetch('/Services.json')
+    .then(res=>res.json())
+    .then(data=>setImages(data))
+
+
     const unSubscribe = onAuthStateChanged(auth, (currentUser) => {
       setUser(currentUser);
     });
     return () => {
       unSubscribe();
     };
+
+   
   }, []);
   const authInfo = {
     user,
     createUser,
     Login,
     LogOut,
+    images
   };
   return (
     <AuthContext.Provider value={authInfo}>{children}</AuthContext.Provider>

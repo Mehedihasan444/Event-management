@@ -4,6 +4,9 @@ import Home from "../Pages/Home/Home";
 import About from "../Pages/About/About";
 import Login from "../Pages/Login/Login";
 import Resister from "../Pages/Resister/Resister";
+import PrivateRoute from "./PrivateRoute";
+import ServiceDetailsServiceDetails from "../Pages/ServiceDetails/ServiceDetails";
+import ServiceDetails from "../Pages/ServiceDetails/ServiceDetails";
 
 const Routes = createBrowserRouter([
   {
@@ -26,6 +29,10 @@ const Routes = createBrowserRouter([
         path: "/Resister",
         element: <Resister></Resister>,
       },
+      {
+        path:"/ServiceDetails/:id",
+        element:<PrivateRoute><ServiceDetails></ServiceDetails></PrivateRoute>
+      }
     ],
   },
 ]);
