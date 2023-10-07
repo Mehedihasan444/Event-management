@@ -18,7 +18,7 @@ const LatestEvents = () => {
 
   const {images}=useContext(AuthContext)
 
-console.log(images)
+// console.log(images)
   return (
     <div className='text-center mt-10 h-screen'>
       <p className="">UPCOMING EVENTS</p>
@@ -62,11 +62,18 @@ console.log(images)
           clickable: true,
         }}
         modules={[FreeMode, Pagination]}
-        className="mySwiper"
+        className="mySwiper my-10 max-w-7xl mx-auto "
       >
-        <SwiperSlide>Slide 1</SwiperSlide>
+        
       {
-        images.map(image)
+        images.map(image=>
+        <>
+          <SwiperSlide className='relative '>
+            <img src={image.image} className='' alt="" />
+            <h1 className="absolute bottom-14 right-0 left-0 font-bold text-xl text-center z-10">{image.category}</h1>
+          </SwiperSlide> 
+          
+        </>)
       }
       
       </Swiper>
