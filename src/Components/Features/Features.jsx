@@ -24,46 +24,46 @@ const Features = () => {
             ABOUT HARMONI
           </button>
         </div>
-        <div className="w-[60%] grid grid-cols-3 bg-white">
+        <div className="w-[60%] ml-20 grid grid-cols-3 bg-white">
             
-          <div className="text-center border-b py-10">
-            <div className="flex justify-center items-center text-6xl">
+          <div className="text-center border-b py-10 ">
+            <div className="flex justify-center items-center text-6xl text-[#fe4504]">
               <FaRegHandshake></FaRegHandshake>
             </div>
             <h1 className="font-bold text-xl">Friendly Team</h1>
             <p className="">More than 200 teams</p>
             
           </div>
-          <div className="text-center border-b  border-l py-10">
-            <div className="flex justify-center items-center text-6xl">
+          <div className=" bg-gradient-to-t from-[#ffa628] shadow-xl to-[#fe4504] text-center border-b text-white  border-l py-10">
+            <div className="flex justify-center items-center text-6xl ">
               <GiBalloons></GiBalloons>
             </div>
             <h1 className="font-bold text-xl">Perfect Venues</h1>
             <p className="">Around 20 Venues</p>
           </div>
           <div className="text-center border-b border-l py-10">
-            <div className="flex justify-center items-center text-6xl">
+            <div className="flex justify-center items-center text-6xl text-[#fe4504]">
               <FaGlassCheers></FaGlassCheers>
             </div>
             <h1 className="font-bold text-xl">Unique Scenario</h1>
             <p className="">We thinking out of the box</p>
           </div>
           <div className="text-center border-b py-10">
-            <div className="flex justify-center items-center text-6xl">
+            <div className="flex justify-center items-center text-6xl text-[#fe4504]">
               <BsConeStriped></BsConeStriped>
             </div>
             <h1 className="font-bold text-xl">Unforgettable Time</h1>
             <p className="">We make your perfect event</p>
           </div>
           <div className="text-center border-l py-10">
-            <div className="flex justify-center items-center text-6xl">
+            <div className="flex justify-center items-center text-6xl text-[#fe4504]">
               <BiSolidPhoneCall></BiSolidPhoneCall>
             </div>
             <h1 className="font-bold text-xl">24/7 Hours Support</h1>
             <p className="">Anytime anywhere</p>
           </div>
           <div className="text-center border-l py-10">
-            <div className="flex justify-center items-center text-6xl">
+            <div className="flex justify-center items-center text-6xl text-[#fe4504]">
               <HiLightBulb></HiLightBulb>
             </div>
             <h1 className="font-bold text-xl">Briliant idea</h1>

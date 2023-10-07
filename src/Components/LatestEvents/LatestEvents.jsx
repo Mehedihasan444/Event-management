@@ -5,13 +5,14 @@ import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css';
 import 'swiper/css/free-mode';
 import 'swiper/css/pagination';
-
+import 'swiper/css/navigation';
 import './styles.css';
 
 // import required modules
-import { FreeMode, Pagination } from 'swiper/modules';
+import { FreeMode, Navigation, Pagination } from 'swiper/modules';
 import { useContext } from 'react';
 import { AuthContext } from '../../AuthProvider/AuthProvider';
+import Countdown from './Countdown';
 
 
 const LatestEvents = () => {
@@ -25,7 +26,7 @@ const LatestEvents = () => {
       <h1 className="text-4xl">
         Latest <span className="font-bold ">Awesome Events</span>
       </h1>
-      <div className="flex justify-center items-center mt-5">
+      {/* <div className="flex justify-center items-center mt-5  ">
         <div className="grid grid-flow-col gap-5 text-center auto-cols-max">
           <div className="flex flex-col p-2 bg-neutral rounded-box text-neutral-content">
             <span className="countdown font-mono text-5xl">
@@ -52,17 +53,22 @@ const LatestEvents = () => {
             sec
           </div>
         </div>
+      </div> */}
+
+      <div className="">
+        <Countdown></Countdown>
       </div>
       <div className="">
-      <Swiper
+      <Swiper navigation={true}
         slidesPerView={3}
         spaceBetween={30}
         freeMode={true}
+        loop={true}
         pagination={{
           clickable: true,
         }}
-        modules={[FreeMode, Pagination]}
-        className="mySwiper my-10 max-w-7xl mx-auto "
+        modules={[FreeMode, Pagination,Navigation]}
+        className="mySwiper my-5 max-w-7xl mx-auto "
       >
         
       {

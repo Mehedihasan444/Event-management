@@ -22,7 +22,7 @@ const [images,setImages]=useState([])
 
   // console.log(images)
   return (
-   <div className="">
+   <div className="my-20">
      <div className="text-center mt-10 max-w-7xl mx-auto">
       <p className="">OUR SERVICES</p>
       <h1 className="text-4xl">
@@ -32,8 +32,8 @@ const [images,setImages]=useState([])
     
     {
       images.map(image=><>
-       <Card className="w-full max-w-[26rem] ">
-        <CardHeader floated={false} color="blue-gray">
+       <Card shadow={false} className="w-full max-w-[26rem]  border">
+        <CardHeader  floated={false} color="blue-gray">
           <img
             src={image.image}
             alt=""
@@ -42,7 +42,7 @@ const [images,setImages]=useState([])
         </CardHeader>
         <CardBody>
           <div className="mb-3 flex items-center justify-between">
-            <Typography variant="h5" color="blue-gray" className="font-medium text-4xl ">
+            <Typography variant="h5" color="blue-gray" className="font-bold text-4xl ">
             {image.category}
             </Typography>
        
