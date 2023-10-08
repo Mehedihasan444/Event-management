@@ -9,13 +9,14 @@ const links =
 <>
 <li className="ml-5"><NavLink to="/">Home</NavLink></li>
 <li className="ml-5"><NavLink to="/About">About Us</NavLink></li>
+<li className="ml-5"><NavLink to="/BlogsPage">Blogs</NavLink></li>
 <li className="ml-5"><NavLink to="/About">Contact Us</NavLink></li>
 <li className="ml-5"><NavLink to="/About">Events</NavLink></li>
 </>
 
   return (
     <div>
-    <div className="navbar bg-base-100 py-5">
+    <div className="navbar bg-base-100 py-5 shadow-lg ">
   <div className="navbar-start">
     <div className="dropdown">
       <label tabIndex={0} className="btn btn-ghost lg:hidden">

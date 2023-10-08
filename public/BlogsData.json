@@ -1,0 +1,52 @@
+[
+    {
+        "id": 1,
+        "title": "10 Must-Have Entertainment Acts for Your Music Festival",
+        "author": "Sarah Johnson",
+        "date": "2023-10-10",
+        "category": "Music Festivals",
+        "image": "https://i.ibb.co/rxpjz7v/Music-Fest-2.jpg",
+        "content": "Discover the top entertainment acts that will make your music festival unforgettable. From headliners to emerging artists, we've got you covered.",
+        "tags": ["Music Festivals", "Entertainment Acts", "Event Planning"]
+    },
+    {
+        "id": 2,
+        "title": "Creating Magical Moments: Wedding Planning Tips and Trends",
+        "author": "Emily Davis",
+        "date": "2023-09-25",
+        "category": "Weddings",
+        "image": "https://i.ibb.co/pws8Xp9/Theater-Production-1.jpg",
+        "content": "Explore the latest wedding planning trends and tips to create a magical and memorable wedding experience for couples and guests.",
+        "tags": ["Weddings", "Wedding Planning", "Event Trends"]
+    },
+    {
+        "id": 3,
+        "title": "Behind the Scenes: The Art of Theater Production",
+        "author": "Michael Adams",
+        "date": "2023-09-15",
+        "category": "Theater Production",
+        "image": "https://i.ibb.co/MVSMSDZ/Theater-Production-4.jpg",
+        "content": "Go backstage and uncover the fascinating world of theater production. Learn how stage magic is brought to life and what it takes to make a show shine.",
+        "tags": ["Theater Production", "Backstage", "Stagecraft"]
+    },
+    {
+        "id": 4,
+        "title": "The Power of Laughter: Comedy Events and Their Impact",
+        "author": "John Smith",
+        "date": "2023-08-30",
+        "category": "Comedy",
+        "image": "https://i.ibb.co/6gMSW9C/Comedy-4.jpg",
+        "content": "Explore the benefits of comedy events, from reducing stress to promoting well-being. Laugh your way through the world of humor and entertainment.",
+        "tags": ["Comedy", "Humor", "Wellness"]
+    },
+    {
+        "id": 5,
+        "title": "Tech Trends Transforming Entertainment: Event Technology Insights",
+        "author": "Lisa Anderson",
+        "date": "2023-08-15",
+        "category": "Event Technology",
+        "image": "https://i.ibb.co/gvwQ29b/Conference-1.jpg",
+        "content": "Stay ahead of the curve with a look at the latest event technology trends. Discover how technology is shaping the future of entertainment events.",
+        "tags": ["Event Technology", "Tech Trends", "Innovations"]
+    }
+]

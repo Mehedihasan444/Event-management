@@ -1,4 +1,5 @@
 import Banner from "../../Components/Banner/Banner";
+import Blogs from "../../Components/Blogs/Blogs";
 import Features from "../../Components/Features/Features";
 import LatestEvents from "../../Components/LatestEvents/LatestEvents";
 import Services from "../../Components/Services/Services";
@@ -13,6 +14,7 @@ const Home = () => {
             <Features></Features>
             <UnforgettableTimes></UnforgettableTimes>
             <Services></Services>
+            <Blogs></Blogs>
         </div>
     );
 };

@@ -13,6 +13,8 @@ export const AuthContext = createContext(null);
 const AuthProvider = ({ children }) => {
   const [user, setUser] = useState(null);
   const [images,setImages]=useState([])
+
+  
   const createUser = (email, password) => {
     return createUserWithEmailAndPassword(auth, email, password);
   };

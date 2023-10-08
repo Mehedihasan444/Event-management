@@ -23,14 +23,17 @@ const Resister = () => {
     const Checkbox = e.target.Checkbox.checked;
 
 
-    // password validation
+   // password validation
     if (Password.length < 6) {
       setResisterError("Password should be at least 6 character or longer.");
       return;
-    } else if (!/^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/.test(Password)) {
-      setResisterError("Your password should have at least one character.");
-      return;
-    } else if (!Checkbox) {
+    } 
+    // else
+    //  if (!/^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/.test(Password)) {
+    //   setResisterError("Your password should have at least one character.");
+    //   return;
+    // } 
+    else if (!Checkbox) {
       setResisterError("Please accept our terms and conditions.");
       return;
     }

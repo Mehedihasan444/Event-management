@@ -5,8 +5,9 @@ import About from "../Pages/About/About";
 import Login from "../Pages/Login/Login";
 import Resister from "../Pages/Resister/Resister";
 import PrivateRoute from "./PrivateRoute";
-import ServiceDetailsServiceDetails from "../Pages/ServiceDetails/ServiceDetails";
 import ServiceDetails from "../Pages/ServiceDetails/ServiceDetails";
+import BlogsPage from "../Pages/BlogsPage/BlogsPage";
+import BlogDetails from "../Pages/BlogDetails/BlogDetails";
 
 const Routes = createBrowserRouter([
   {
@@ -16,10 +17,23 @@ const Routes = createBrowserRouter([
       {
         path: "/",
         element: <Home></Home>,
+     
+
       },
       {
         path: "/About",
         element: <About></About>,
+      },
+      {
+        path: "/BlogsPage",
+        element: <BlogsPage></BlogsPage>,
+        loader:()=>fetch('/BlogsData.json')
+      },
+      {
+        path: "/BlogDetails/:id",
+        element:<PrivateRoute><BlogDetails></BlogDetails></PrivateRoute> ,
+        loader:()=>fetch('/BlogsData.json')
+
       },
       {
         path: "/Login",
