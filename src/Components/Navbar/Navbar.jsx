@@ -5,13 +5,14 @@ import { AuthContext } from "../../AuthProvider/AuthProvider";
 const Navbar = () => {
 
   const {user,LogOut}=useContext(AuthContext)
+  console.log(user)
 const links =
 <>
 <li className="ml-5"><NavLink to="/">Home</NavLink></li>
-<li className="ml-5"><NavLink to="/About">About Us</NavLink></li>
+{/* <li className="ml-5"><NavLink to="/About">About Us</NavLink></li> */}
 <li className="ml-5"><NavLink to="/BlogsPage">Blogs</NavLink></li>
-<li className="ml-5"><NavLink to="/About">Contact Us</NavLink></li>
-<li className="ml-5"><NavLink to="/About">Events</NavLink></li>
+{/* <li className="ml-5"><NavLink to="/About">Contact Us</NavLink></li> */}
+<li className="ml-5"><NavLink to="/Events">Events</NavLink></li>
 </>
 
   return (
@@ -37,7 +38,8 @@ const links =
   </div>
   <div className="navbar-end">
     {
-      user?<Link onClick={()=>LogOut()} className="btn">LogOut</Link>:<Link to="/Login" className="btn">Login</Link>}
+      user?<div className="flex gap-3 items-center"><span className="">{user.displayName}</span><img src={user.photoURL
+      } alt="" className="rounded-full w-10" /><Link onClick={()=>LogOut()} className="btn">LogOut</Link></div>:<Link to="/Login" className="btn">Login</Link>}
   </div>
 </div>
     </div>

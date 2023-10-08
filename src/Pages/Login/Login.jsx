@@ -5,13 +5,14 @@ import { Link, useLocation, useNavigate } from "react-router-dom";
 import { AiFillEyeInvisible, AiFillEye } from "react-icons/ai";
 import { useContext } from "react";
 import {AuthContext} from "../../AuthProvider/AuthProvider"
+// import toast, { Toaster } from "react-hot-toast";
 
-
-
+import { FcGoogle } from "react-icons/fc";
+import { toast } from "react-toastify";
 
 const Login = () => {
 
-  const {Login}=useContext(AuthContext);
+  const {Login,googleLogin}=useContext(AuthContext);
 
   const [resisterError, setResisterError] = useState("");
   const [resisterSuccess, setResisterSuccess] = useState("");
@@ -35,19 +36,39 @@ const navigate =  useNavigate();
     Login( email, password)
       .then((result) => {
         console.log(result.user);
-        
+        toast.success("Successfully Login!");
         navigate(location?.state?location.state:'/')
       })
       .catch((error) => {
+        toast.error("Login failed!.");
         console.log(error.message);
         setResisterError(error.message);
       });
-  };
 
+
+      
+    };
+    const handleGoogleLogin=()=>{
+  googleLogin()
+  .then((result)=>{
+    console.log(result.user);
+    toast.success("Successfully Login!");
+        navigate(location?.state?location.state:'/')
+  })
+  .catch((error)=>{
+    toast.error("Login failed!.");
+    console.log(error.message);
+    setResisterError(error.message);
+  })
+
+}
 
   return (
    <div className="">
-    <div className="flex justify-center items-center h-[80vh]">
+      {resisterError && <p className="text-red-700">{resisterError}</p>}
+      {resisterSuccess && <p className="text-green-600">{resisterSuccess}</p>}
+
+    <div className="flex flex-col justify-center items-center h-[100vh]">
       <div className="relative flex w-96 flex-col rounded-xl bg-white bg-clip-border text-gray-700 shadow-md">
         <div className="relative mx-4 -mt-6 mb-4 grid h-28 place-items-center overflow-hidden rounded-xl bg-gradient-to-tr from-pink-600 to-pink-400 bg-clip-border text-white shadow-lg shadow-pink-500/40">
           <h3 className="block font-sans text-3xl font-semibold leading-snug tracking-normal text-white antialiased">
@@ -145,10 +166,14 @@ const navigate =  useNavigate();
             </p>
           </div>
         </form>
-      </div>
-      {resisterError && <p className="text-red-700">{resisterError}</p>}
-      {resisterSuccess && <p className="text-green-600">{resisterSuccess}</p>}
+    <div className="flex justify-center items-center">
+      <FcGoogle className="text-black text-4xl mb-3 cursor-pointer" onClick={handleGoogleLogin}></FcGoogle>
+     
     </div>
+      </div>
+      
+    </div>
+
    </div>
   );
 };
