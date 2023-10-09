@@ -22,8 +22,8 @@ const Navbar = () => {
   );
   // className='focus:bg-gradient-to-r from-[#ffa628] to-[#fe4504]'
   return (
-    <div>
-      <div className="navbar bg-base-100 py-5 shadow-lg w-[95vw] lg:w-[99vw] ">
+    <div className="shadow-lg">
+      <div className="navbar bg-base-100 py-5  w-[95vw] lg:w-[99vw] ">
         <div className="navbar-start">
           <div className="dropdown">
             <label tabIndex={0} className="btn btn-ghost lg:hidden">

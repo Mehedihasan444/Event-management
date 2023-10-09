@@ -11,7 +11,7 @@ const Banner = () => {
       <p className="text-white">EVERY EVENT SHOULD BE PERFECT </p>
       <div className="flex gap-5 md:gap-20 pt-10">
        <Link to="/About"> <button className="btn border-none bg-gradient-to-r from-[#fe4504] to-[#ffa628] text-white px-10 py-3 rounded-full">ABOUT US</button></Link>
-        <button className="btn bg-transparent  text-white border-2  border-[#fe4504] hover:text-black hover:border-[#fe4504] rounded-full px-10">GET STARTED!</button>
+        <a href="#service"><button className="btn bg-transparent  text-white border-2  border-[#fe4504] hover:text-black hover:border-[#fe4504] rounded-full px-10">GET STARTED!</button></a>
       </div>
       </div>
     </div>

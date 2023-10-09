@@ -17,7 +17,7 @@ const About = () => {
     <div className="">
       <div className="max-w-7xl mx-auto my-10">
         <h1 className="text-4xl font-bold text-center">Our Team Members</h1>
-        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-5 ">
+        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-5 justify-center">
           {membersData.map((aMember) => (
             <>
               <div className="">
@@ -90,20 +90,20 @@ const About = () => {
             <div className="">
               <h1 className="mb-5 text-5xl font-bold">Let’s Start Planning!</h1>
               
-              <div className="flex gap-20">
-                <div className="w-[50%]">
-                  <p className="mb-5">
+              <div className="lg:flex gap-20">
+                <div className="">
+                  <p className="mb-5 text-2xl font-semibold">
                   Call Us
                   </p>
-                  <h1 className="mb-5 text-5xl font-bold">
+                  <h1 className="mb-5 text-4xl font-bold">
                   (255) 352-6258
                   </h1>
                 </div>
                 <div className="flex-1">
-                  <p className="mb-5">
+                  <p className="mb-5 text-2xl font-semibold">
                   Email Us
                   </p>
-                  <h1 className="mb-5 text-5xl font-bold">
+                  <h1 className="mb-5 text-4xl font-bold">
                   hello@divievent.com
                   </h1>
                 </div>

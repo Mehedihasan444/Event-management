@@ -22,7 +22,7 @@ const [images,setImages]=useState([])
 
   // console.log(images)
   return (
-   <div className="my-20">
+   <div className="my-20" id="service">
      <div className="text-center mt-10 max-w-7xl mx-auto">
       <p className="">OUR SERVICES</p>
       <h1 className="text-4xl">
