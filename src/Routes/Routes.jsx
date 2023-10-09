@@ -8,17 +8,17 @@ import PrivateRoute from "./PrivateRoute";
 import ServiceDetails from "../Pages/ServiceDetails/ServiceDetails";
 import BlogsPage from "../Pages/BlogsPage/BlogsPage";
 import BlogDetails from "../Pages/BlogDetails/BlogDetails";
-import Error from "../Components/Error/Error";
+import ErrorPage from "../Components/ErrorPage/ErrorPage";
 
 const Routes = createBrowserRouter([
   {
     path: "/",
     element: <Root></Root>,
+    errorElement:<ErrorPage></ErrorPage>,
     children: [
       {
         path: "/",
         element: <Home></Home>,
-     errorElement:<Error></Error>
       },
       {
         path: "/About",
