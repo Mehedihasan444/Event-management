@@ -3,3 +3,9 @@
 
 
 ### Website features :
+
+- user can login and logout 
+- Without login user cannot see blogs, about us,and service details pages
+- When user login or registration complete user can see toast.
+- Password validation
+- Navbar have active routes
