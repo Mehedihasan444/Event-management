@@ -28,7 +28,7 @@ const [images,setImages]=useState([])
       <h1 className="text-4xl">
         Harmoni <span className="font-bold "> Expertises</span>
       </h1>
-      <div className="mt-8 grid grid-cols-3 gap-5">
+      <div className="mt-8 grid md:grid-cols-2 lg:grid-cols-3 gap-5 px-5 lg:px-0">
     
     {
       images.map(image=><>

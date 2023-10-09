@@ -5,7 +5,7 @@ import { Link, useLocation, useNavigate } from "react-router-dom";
 import { AiFillEyeInvisible, AiFillEye } from "react-icons/ai";
 import { useContext } from "react";
 import {AuthContext} from "../../AuthProvider/AuthProvider"
-// import toast, { Toaster } from "react-hot-toast";
+
 
 import { FcGoogle } from "react-icons/fc";
 import { toast } from "react-toastify";
@@ -37,6 +37,7 @@ const navigate =  useNavigate();
       .then((result) => {
         console.log(result.user);
         toast.success("Successfully Login!");
+    
         navigate(location?.state?location.state:'/')
       })
       .catch((error) => {

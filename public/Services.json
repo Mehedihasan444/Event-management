@@ -9,14 +9,14 @@
     {
         "id": 2,
         "image": "https://i.ibb.co/q5d1kmZ/Music-Fest-5.jpg",
-        "category": "MusicFest",
+        "category": "Music Fest",
         "description": "Join the ultimate music celebration at our music festivals. Enjoy multiple stages, top artists, and a vibrant atmosphere where music lovers come together.",
         "price":"$4000.00 - $6000.00"
     },
     {
         "id": 3,
         "image": "https://i.ibb.co/MVSMSDZ/Theater-Production-4.jpg",
-        "category": "TheaterProduction",
+        "category": "Theater Production",
         "description": "Immerse yourself in the world of drama and storytelling with our theater productions. From classic plays to modern dramas, our productions offer captivating narratives and stellar performances.",
         "price":"$1000000.00 - $3000000.00"
     },

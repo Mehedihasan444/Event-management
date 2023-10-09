@@ -1,0 +1,90 @@
+[
+    {
+        "id": 1,
+        "name": "John Smith",
+        "position": "Event Manager",
+        "description": "John is a seasoned event manager with over 10 years of experience in the entertainment industry. He specializes in coordinating large-scale music festivals and concerts, ensuring every detail is executed flawlessly.",
+        "image": "https://i.ibb.co/m8YTKTW/modelg-300x300.jpg",
+        "social": {
+            "linkedin": "https://www.linkedin.com/in/johnsmith",
+            "twitter": "https://twitter.com/johnsmith"
+        }
+    },
+    {
+        "id": 2,
+        "name": "Emily Davis",
+        "position": "Marketing Specialist",
+        "description": "Emily is our marketing guru who knows how to create buzz around our events. With her creative ideas and strategic approach, she ensures our events reach a wide and engaged audience.",
+        "image": "https://i.ibb.co/d4TnxCy/modeln1-300x300.jpg",
+        "social": {
+            "linkedin": "https://www.linkedin.com/in/emilydavis",
+            "twitter": "https://twitter.com/emilydavis"
+        }
+    },
+    {
+        "id": 3,
+        "name": "Michael Adams",
+        "position": "Production Manager",
+        "description": "Michael is the mastermind behind the scenes. He oversees the technical and production aspects of our theater productions, making sure the show runs smoothly.",
+        "image": "https://i.ibb.co/7nftVWP/modeln2-300x300.jpg",
+        "social": {
+            "linkedin": "https://www.linkedin.com/in/michaeladams",
+            "twitter": "https://twitter.com/michaeladams"
+        }
+    },
+    {
+        "id": 4,
+        "name": "Sarah Johnson",
+        "position": "Concert Coordinator",
+        "description": "Sarah's passion for music drives her work as our concert coordinator. She collaborates with artists, handles logistics, and ensures our concerts are unforgettable experiences.",
+        "image": "https://i.ibb.co/4SX73sF/modeln4-300x300.jpg",
+        "social": {
+            "linkedin": "https://www.linkedin.com/in/sarahjohnson",
+            "twitter": "https://twitter.com/sarahjohnson"
+        }
+    },
+    {
+        "id": 5,
+        "name": "Lisa Anderson",
+        "position": "Technology Specialist",
+        "description": "Lisa is our tech wizard who stays ahead of the curve with the latest event technology trends. She enhances our events with innovative tech solutions.",
+        "image": "https://i.ibb.co/rsGsN88/modeln5-300x300.jpg",
+        "social": {
+            "linkedin": "https://www.linkedin.com/in/lisaanderson",
+            "twitter": "https://twitter.com/lisaanderson"
+        }
+    },
+    {
+        "id": 6,
+        "name": "David Lee",
+        "position": "Ticketing Manager",
+        "description": "David is responsible for managing ticket sales and distribution. He ensures that attendees have a seamless ticketing experience for our events.",
+        "image": "https://i.ibb.co/ft4mPrq/modeln6-300x300.jpg",
+        "social": {
+            "linkedin": "https://www.linkedin.com/in/davidlee",
+            "twitter": "https://twitter.com/davidlee"
+        }
+    },
+    {
+        "id": 7,
+        "name": "Olivia Carter",
+        "position": "Creative Director",
+        "description": "Olivia brings creativity and innovation to our event designs. She is passionate about creating visually stunning experiences for our audiences.",
+        "image": "https://i.ibb.co/8rnW36J/modeln11-300x300.jpg",
+        "social": {
+            "linkedin": "https://www.linkedin.com/in/oliviacarter",
+            "twitter": "https://twitter.com/oliviacarter"
+        }
+    },
+    {
+        "id": 8,
+        "name": "Mark Turner",
+        "position": "Finance Manager",
+        "description": "Mark manages the financial aspects of our events. He ensures budgets are met and financial operations run smoothly to support successful events.",
+        "image": "https://i.ibb.co/FBXkwWW/model2-2-300x300.jpg",
+        "social": {
+            "linkedin": "https://www.linkedin.com/in/markturner",
+            "twitter": "https://twitter.com/markturner"
+        }
+    }
+]

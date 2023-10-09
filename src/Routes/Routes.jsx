@@ -22,11 +22,12 @@ const Routes = createBrowserRouter([
       },
       {
         path: "/About",
-        element: <About></About>,
+        element: <PrivateRoute><About></About></PrivateRoute>,
+        loader:()=>fetch('/TeamMembersData.json')
       },
       {
         path: "/BlogsPage",
-        element: <BlogsPage></BlogsPage>,
+        element: <PrivateRoute><BlogsPage></BlogsPage></PrivateRoute>,
         loader:()=>fetch('/BlogsData.json')
       },
       {

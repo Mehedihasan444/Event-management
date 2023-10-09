@@ -17,11 +17,11 @@ const UnforgettableTimes = () => {
   return (
     <div className="text-center mt-20 ">
       <p className="">HARMONI GALLERY</p>
-      <h1 className="text-4xl">
+      <h1 className="text-2xl md:text-4xl">
         Beautiful &<span className="font-bold "> Unforgettable Time</span>
       </h1>
       <div className="">
-        <div className="grid grid-cols-2 md:grid-cols-4 gap-4 mt-10">
+        <div className="grid grid-cols-1  md:grid-cols-3 pl-3 md:pl-0 md:px-5 lg:px-0 lg:grid-cols-4 gap-4 mt-10">
           {value?images.map((image) => (
             <>
               <div>
@@ -45,7 +45,7 @@ const UnforgettableTimes = () => {
           ))}
     
         </div>
-        <div className="mt-10">{!value&&<button onClick={handleSeeAll} className="btn">SEE ALL</button>}</div>
+        <div className="mt-10">{!value&&<button onClick={handleSeeAll} className="btn bg-gradient-to-r text-white from-[#ffa628] shadow-xl to-[#fe4504]">SEE ALL</button>}</div>
       </div>
     </div>
   );

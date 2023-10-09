@@ -43,16 +43,16 @@ const Blogs = () => {
       .then((data) => setBlogs(data));
   }, []);
   return (
-    <div className="max-w-7xl mx-auto  h-screen ">
-      <div className="flex  items-center">
-        <div className="space-y-5 flex-1">
-          <div className="h-1 bg-[#fc925b] w-20"></div>
+    <div className="max-w-7xl mx-auto  lg:h-screen ">
+      <div className="  lg:flex  items-center mb-7 lg:mb-0 ">
+        <div className="text-center lg:text-left sm:flex flex-col items-center lg:items-start space-y-5 flex-1">
+          <div className="h-1 bg-[#fc925b] w-20 hidden lg:block"></div>
           <p className="">FIND YOUR ANSWER</p>
           <h1 className="text-4xl">
             Ask & <span className="font-bold">Questions</span>
           </h1>
         </div>
-        <div className="space-y-5 flex-1 ml-[40px]">
+        <div className="hidden lg:block space-y-5 flex-1 ml-[40px]">
           <div className="h-1 bg-[#fc925b] w-20"></div>
           <p className="">OUR BLOG</p>
           <h1 className="text-4xl">
@@ -60,11 +60,11 @@ const Blogs = () => {
           </h1>
         </div>
       </div>
-      <div className="flex gap-10 items-center">
+      <div className="lg:flex gap-10 items-center">
          {/* accordian */}
-      <div className="flex-1 space-y-5 border-gray-300  border-b-1">
+      <div className=" flex justify-center flex-1 space-y-5 border-gray-300  border-b-1 mx-5 lg:mx-0">
        
-        <div className="bg-[#f8f8f8] p-5 rounded-md">
+        <div className="lg:bg-[#f8f8f8] md:p-5 rounded-md">
   <Accordion open={open === 1} icon={<Icon id={1} open={open} />}>
     <AccordionHeader onClick={() => handleOpen(1)}>
       <h1 className=""><span className="font-extrabold text-gray-300">01.</span>    What types of events do you manage?</h1>
@@ -109,7 +109,7 @@ const Blogs = () => {
 </div>
       </div>
       {/* blogs */}
-      <div className="flex-1">
+      <div className="flex-1 hidden lg:block">
         <div className="">
           {blogs.slice(0, 2).map((blog) => (
             <>

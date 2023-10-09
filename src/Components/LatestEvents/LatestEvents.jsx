@@ -21,40 +21,11 @@ const LatestEvents = () => {
 
 // console.log(images)
   return (
-    <div className='text-center mt-10 h-screen'>
+    <div className='text-center mt-10 lg:h-screen'>
       <p className="">UPCOMING EVENTS</p>
       <h1 className="text-4xl">
         Latest <span className="font-bold ">Awesome Events</span>
       </h1>
-      {/* <div className="flex justify-center items-center mt-5  ">
-        <div className="grid grid-flow-col gap-5 text-center auto-cols-max">
-          <div className="flex flex-col p-2 bg-neutral rounded-box text-neutral-content">
-            <span className="countdown font-mono text-5xl">
-              <span style={{ "--value": 15 }}></span>
-            </span>
-            days
-          </div>
-          <div className="flex flex-col p-2 bg-neutral rounded-box text-neutral-content">
-            <span className="countdown font-mono text-5xl">
-              <span style={{ "--value": 10 }}></span>
-            </span>
-            hours
-          </div>
-          <div className="flex flex-col p-2 bg-neutral rounded-box text-neutral-content">
-            <span className="countdown font-mono text-5xl">
-              <span style={{ "--value": 24 }}></span>
-            </span>
-            min
-          </div>
-          <div className="flex flex-col p-2 bg-neutral rounded-box text-neutral-content">
-            <span className="countdown font-mono text-5xl">
-              <span style={{ "--value": 52 }}></span>
-            </span>
-            sec
-          </div>
-        </div>
-      </div> */}
-
       <div className="">
         <Countdown></Countdown>
       </div>
@@ -64,11 +35,37 @@ const LatestEvents = () => {
         spaceBetween={30}
         freeMode={true}
         loop={true}
+        autoplay={{
+          delay: 3000, // Delay in milliseconds between slides
+          disableOnInteraction: true, // Allows user interaction to pause autoplay
+        }}
+        speed={800}
         pagination={{
           clickable: true,
         }}
+        breakpoints={{
+          // when window width is >= 320px
+          320: {
+            slidesPerView: 1,
+            spaceBetween: 20
+          },
+          // when window width is >= 480px
+          480: {
+            slidesPerView: 2,
+            spaceBetween: 30
+          },
+          // when window width is >= 640px
+          640: {
+            slidesPerView: 2,
+            spaceBetween: 20
+          },
+          1080: {
+            slidesPerView: 3,
+            spaceBetween: 30
+          }}
+        }
         modules={[FreeMode, Pagination,Navigation]}
-        className="mySwiper my-5 max-w-7xl mx-auto "
+        className="mySwiper my-5 max-w-7xl mx-auto  "
       >
         
       {

@@ -48,12 +48,11 @@ const Resister = () => {
     //create user
     createUser(email, Password)
       .then((result) => {
-        // navigate("/");
-        UpdateName(name, imageUrl);
         toast.success("Successfully resister!");
         console.log(result.user);
         setResisterSuccess("User created successfully.");
         navigate('/');
+        UpdateName(name, imageUrl);
       })
       .catch((error) => {
         toast.error("Resister failed!.");

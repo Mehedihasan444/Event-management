@@ -5,26 +5,21 @@ import { BiSolidPhoneCall } from "react-icons/bi";
 import { BsConeStriped } from "react-icons/bs";
 const Features = () => {
   return (
-    <div className="bg-[#f7f7f7] p-10 h-screen flex items-center">
-      <div className="flex gap-16 mx-auto max-w-7xl">
-        <div className="w-[40%] space-y-5">
+    <div className="bg-[#f7f7f7] p-10 lg:h-screen flex items-center">
+      <div className="lg:flex gap-16 mx-auto max-w-7xl">
+        <div className="text-center lg:text-left lg:w-[40%] space-y-5">
           <p className="">WE ARE HARMONIC</p>
-          <h1 className="text-4xl">
+          <h1 className="text-2xl md:text-4xl">
             <span className="font-bold">NO.1 </span>Events Management
           </h1>
           <p className="">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit dolor
-            ipsum, eaque saepe consectetur eligendi? Eveniet doloremque, iste
-            maxime quasi ut eius incidunt inventore ratione hic quibusdam animi
-            aliquam beatae accusamus culpa deserunt quod asperiores omnis
-            tempora corrupti! Temporibus error nihil assumenda. Deleniti vel
-            sequi sit sapiente officiis voluptatibus numquam.
+          At No. 1 Entertainment Event Management, we take the spotlight in creating extraordinary experiences. With a team dedicated to orchestrating unforgettable entertainment events, we're your premier choice for making moments magical. We specialize in curating events that pulse with energy, from dazzling concerts and lively festivals to captivating live shows. Our commitment to excellence, coupled with cutting-edge technology and a passion for entertainment, ensures that each event we craft is a showstopper. Let us bring your entertainment vision to life and make your event the talk of the town.
           </p>
-          <button className="btn btn-primary rounded-full">
+          <button className="btn btn-primary rounded-full bg-gradient-to-r border-none text-white from-[#ffa628] shadow-xl to-[#fe4504]">
             ABOUT HARMONI
           </button>
         </div>
-        <div className="w-[60%] ml-20 grid grid-cols-3 bg-white">
+        <div className="lg:w-[60%] mt-10 lg:mt-0 lg:ml-20 grid  md:grid-cols-3 bg-white">
             
           <div className="text-center border-b py-10 ">
             <div className="flex justify-center items-center text-6xl text-[#fe4504]">
