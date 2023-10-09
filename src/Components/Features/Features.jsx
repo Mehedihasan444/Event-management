@@ -7,7 +7,7 @@ const Features = () => {
   return (
     <div className="bg-[#f7f7f7] p-10 lg:h-screen flex items-center">
       <div className="lg:flex gap-16 mx-auto max-w-7xl">
-        <div className="text-center lg:text-left lg:w-[40%] space-y-5">
+        <div className="text-center lg:text-left lg:w-[40%] space-y-5" data-aos="fade-right">
           <p className="">WE ARE HARMONIC</p>
           <h1 className="text-2xl md:text-4xl">
             <span className="font-bold">NO.1 </span>Events Management

@@ -22,10 +22,13 @@ const LatestEvents = () => {
 // console.log(images)
   return (
     <div className='text-center mt-10 lg:h-screen'>
-      <p className="">UPCOMING EVENTS</p>
+      <div className="" data-aos="fade-right">
+        <p className="">UPCOMING EVENTS</p>
       <h1 className="text-4xl">
         Latest <span className="font-bold ">Awesome Events</span>
       </h1>
+      </div>
+      
       <div className="">
         <Countdown></Countdown>
       </div>

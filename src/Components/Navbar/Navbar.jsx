@@ -51,7 +51,7 @@ const Navbar = () => {
           </div>
          
             <a className="btn btn-ghost normal-case  text-xl hidden lg:block">
-              Event Planner
+            HARMONI
             </a>
          
         </div>
